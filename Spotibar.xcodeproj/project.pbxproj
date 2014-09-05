@@ -18,6 +18,13 @@
 		CB1BBE4619B34699005FDEF3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1BBE2519B34699005FDEF3 /* Cocoa.framework */; };
 		CB1BBE4E19B34699005FDEF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB1BBE4C19B34699005FDEF3 /* InfoPlist.strings */; };
 		CB1BBE5019B34699005FDEF3 /* SpotibarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1BBE4F19B34699005FDEF3 /* SpotibarTests.m */; };
+		CB2C8E2219B8F2660065C446 /* SBStatusStripWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C8E2119B8F2660065C446 /* SBStatusStripWidget.m */; };
+		CB42E80B19B35F89003FCCB6 /* SBSpotifyConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */; };
+		CBAEFB5519B784AC0049138D /* SBTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */; };
+		CBAEFB5819B7AEE70049138D /* SBSongTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEFB5719B7AEE70049138D /* SBSongTimer.m */; };
+		CBB3678919B379E000264E52 /* SBMediaHub.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3678819B379E000264E52 /* SBMediaHub.m */; };
+		CBB367A719B4E91100264E52 /* SBPlayerDummy.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB367A619B4E91100264E52 /* SBPlayerDummy.xib */; };
+		CBB367AA19B4E92500264E52 /* SBPlayerDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB367A919B4E92500264E52 /* SBPlayerDummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,22 @@
 		CB1BBE4B19B34699005FDEF3 /* SpotibarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpotibarTests-Info.plist"; sourceTree = "<group>"; };
 		CB1BBE4D19B34699005FDEF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB1BBE4F19B34699005FDEF3 /* SpotibarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotibarTests.m; sourceTree = "<group>"; };
+		CB2C8E2019B8F2660065C446 /* SBStatusStripWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBStatusStripWidget.h; sourceTree = "<group>"; };
+		CB2C8E2119B8F2660065C446 /* SBStatusStripWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStatusStripWidget.m; sourceTree = "<group>"; };
+		CB42E80919B35F89003FCCB6 /* SBSpotifyConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSpotifyConnection.h; sourceTree = "<group>"; };
+		CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSpotifyConnection.m; sourceTree = "<group>"; };
+		CB42E81019B36EB0003FCCB6 /* SBMediaConnectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBMediaConnectionProtocol.h; sourceTree = "<group>"; };
+		CBAEFB4F19B762F20049138D /* SBPlayerNotificationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBPlayerNotificationProtocol.h; sourceTree = "<group>"; };
+		CBAEFB5319B784AC0049138D /* SBTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTimeFormatter.h; sourceTree = "<group>"; };
+		CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTimeFormatter.m; sourceTree = "<group>"; };
+		CBAEFB5619B7AEE70049138D /* SBSongTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSongTimer.h; sourceTree = "<group>"; };
+		CBAEFB5719B7AEE70049138D /* SBSongTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSongTimer.m; sourceTree = "<group>"; };
+		CBB3678719B379E000264E52 /* SBMediaHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMediaHub.h; sourceTree = "<group>"; };
+		CBB3678819B379E000264E52 /* SBMediaHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMediaHub.m; sourceTree = "<group>"; };
+		CBB367A219B4D96000264E52 /* Spotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		CBB367A619B4E91100264E52 /* SBPlayerDummy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPlayerDummy.xib; sourceTree = "<group>"; };
+		CBB367A819B4E92500264E52 /* SBPlayerDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPlayerDummy.h; sourceTree = "<group>"; };
+		CBB367A919B4E92500264E52 /* SBPlayerDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPlayerDummy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +138,9 @@
 		CB1BBE2B19B34699005FDEF3 /* Spotibar */ = {
 			isa = PBXGroup;
 			children = (
+				CB42E80819B35C70003FCCB6 /* Helpers */,
+				CB42E80F19B360D3003FCCB6 /* Media player interaction */,
+				CBB367AB19B509C500264E52 /* Widgets */,
 				CB1BBE3719B34699005FDEF3 /* SBAppDelegate.h */,
 				CB1BBE3819B34699005FDEF3 /* SBAppDelegate.m */,
 				CB1BBE3A19B34699005FDEF3 /* MainMenu.xib */,
@@ -152,6 +178,76 @@
 				CB1BBE4C19B34699005FDEF3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB2C8E2319B906D20065C446 /* Status strip */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C8E2019B8F2660065C446 /* SBStatusStripWidget.h */,
+				CB2C8E2119B8F2660065C446 /* SBStatusStripWidget.m */,
+			);
+			path = "Status strip";
+			sourceTree = "<group>";
+		};
+		CB42E80819B35C70003FCCB6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEFB5319B784AC0049138D /* SBTimeFormatter.h */,
+				CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */,
+				CBAEFB5619B7AEE70049138D /* SBSongTimer.h */,
+				CBAEFB5719B7AEE70049138D /* SBSongTimer.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB42E80F19B360D3003FCCB6 /* Media player interaction */ = {
+			isa = PBXGroup;
+			children = (
+				CB42E81019B36EB0003FCCB6 /* SBMediaConnectionProtocol.h */,
+				CBB3678719B379E000264E52 /* SBMediaHub.h */,
+				CBB3678819B379E000264E52 /* SBMediaHub.m */,
+				CBB3678A19B379F800264E52 /* Media players */,
+			);
+			name = "Media player interaction";
+			path = "Media players";
+			sourceTree = "<group>";
+		};
+		CBB3678A19B379F800264E52 /* Media players */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEFB4F19B762F20049138D /* SBPlayerNotificationProtocol.h */,
+				CBB367A319B4DDE700264E52 /* Spotify */,
+			);
+			name = "Media players";
+			sourceTree = "<group>";
+		};
+		CBB367A319B4DDE700264E52 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				CB42E80919B35F89003FCCB6 /* SBSpotifyConnection.h */,
+				CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */,
+				CBB367A219B4D96000264E52 /* Spotify.h */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		CBB367AB19B509C500264E52 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C8E2319B906D20065C446 /* Status strip */,
+				CBB367AD19B509D600264E52 /* Dummy player */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		CBB367AD19B509D600264E52 /* Dummy player */ = {
+			isa = PBXGroup;
+			children = (
+				CBB367A619B4E91100264E52 /* SBPlayerDummy.xib */,
+				CBB367A819B4E92500264E52 /* SBPlayerDummy.h */,
+				CBB367A919B4E92500264E52 /* SBPlayerDummy.m */,
+			);
+			path = "Dummy player";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +331,7 @@
 				CB1BBE3E19B34699005FDEF3 /* Images.xcassets in Resources */,
 				CB1BBE3619B34699005FDEF3 /* Credits.rtf in Resources */,
 				CB1BBE3C19B34699005FDEF3 /* MainMenu.xib in Resources */,
+				CBB367A719B4E91100264E52 /* SBPlayerDummy.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +351,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB1BBE3219B34699005FDEF3 /* main.m in Sources */,
+				CBB367AA19B4E92500264E52 /* SBPlayerDummy.m in Sources */,
 				CB1BBE3919B34699005FDEF3 /* SBAppDelegate.m in Sources */,
+				CB42E80B19B35F89003FCCB6 /* SBSpotifyConnection.m in Sources */,
+				CBAEFB5519B784AC0049138D /* SBTimeFormatter.m in Sources */,
+				CBAEFB5819B7AEE70049138D /* SBSongTimer.m in Sources */,
+				CBB3678919B379E000264E52 /* SBMediaHub.m in Sources */,
+				CB2C8E2219B8F2660065C446 /* SBStatusStripWidget.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +570,7 @@
 				CB1BBE5519B34699005FDEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB1BBE5619B34699005FDEF3 /* Build configuration list for PBXNativeTarget "SpotibarTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +579,7 @@
 				CB1BBE5819B34699005FDEF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

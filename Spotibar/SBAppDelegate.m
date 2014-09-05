@@ -7,12 +7,34 @@
 //
 
 #import "SBAppDelegate.h"
+#import "SBMediaHub.h"
+#import "SBMediaConnectionProtocol.h"
+#import "SBPlayerDummy.h"
+#import "SBStatusStripWidget.h"
+
+@interface SBAppDelegate ()
+
+@property (nonatomic, strong) SBMediaHub *mediaHub;
+@property (nonatomic, strong) SBPlayerDummy *playerDummy;
+@property (nonatomic, strong) SBStatusStripWidget *statusStrip;
+
+@end
 
 @implementation SBAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
-    // Insert code here to initialize your application
+    // Initialize media player hub
+    self.mediaHub = [[SBMediaHub alloc] init];
+    
+    // Create player dummy window
+    self.playerDummy = [[SBPlayerDummy alloc] initWithWindowNibName:@"SBPlayerDummy"];
+    [self.playerDummy showWindow:self];
+    [self.mediaHub subscribeWidget:self.playerDummy];
+	
+	// Create status strip
+	self.statusStrip = [[SBStatusStripWidget alloc] init];
+	[self.mediaHub subscribeWidget:self.statusStrip];
 }
 
 @end
