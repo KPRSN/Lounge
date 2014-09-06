@@ -1,4 +1,6 @@
-Spotibar
+Lounge
 ========
 
-Putting spotify in the OS X status bar. Work in progress...
+Putting your music player in the status bar of Mac OS X. 
+
+Note that this project is still at a very early stage of development.
