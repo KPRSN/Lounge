@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB1BBE2619B34699005FDEF3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1BBE2519B34699005FDEF3 /* Cocoa.framework */; };
+		CB1BBE3019B34699005FDEF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB1BBE2E19B34699005FDEF3 /* InfoPlist.strings */; };
+		CB1BBE3219B34699005FDEF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1BBE3119B34699005FDEF3 /* main.m */; };
+		CB1BBE3619B34699005FDEF3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CB1BBE3419B34699005FDEF3 /* Credits.rtf */; };
+		CB1BBE3919B34699005FDEF3 /* SBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1BBE3819B34699005FDEF3 /* SBAppDelegate.m */; };
+		CB1BBE3C19B34699005FDEF3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1BBE3A19B34699005FDEF3 /* MainMenu.xib */; };
+		CB1BBE3E19B34699005FDEF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1BBE3D19B34699005FDEF3 /* Images.xcassets */; };
+		CB1BBE4519B34699005FDEF3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1BBE4419B34699005FDEF3 /* XCTest.framework */; };
+		CB1BBE4619B34699005FDEF3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1BBE2519B34699005FDEF3 /* Cocoa.framework */; };
+		CB1BBE4E19B34699005FDEF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB1BBE4C19B34699005FDEF3 /* InfoPlist.strings */; };
+		CB1BBE5019B34699005FDEF3 /* LoungeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1BBE4F19B34699005FDEF3 /* LoungeTests.m */; };
+		CB2C8E2219B8F2660065C446 /* SBStatusStripWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C8E2119B8F2660065C446 /* SBStatusStripWidget.m */; };
+		CB42E80B19B35F89003FCCB6 /* SBSpotifyConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */; };
+		CBAEFB5519B784AC0049138D /* SBTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */; };
+		CBAEFB5819B7AEE70049138D /* SBSongTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEFB5719B7AEE70049138D /* SBSongTimer.m */; };
+		CBB3678919B379E000264E52 /* SBMediaHub.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3678819B379E000264E52 /* SBMediaHub.m */; };
+		CBB367A719B4E91100264E52 /* SBPlayerDummy.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB367A619B4E91100264E52 /* SBPlayerDummy.xib */; };
+		CBB367AA19B4E92500264E52 /* SBPlayerDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB367A919B4E92500264E52 /* SBPlayerDummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB1BBE4719B34699005FDEF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB1BBE1A19B34699005FDEF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB1BBE2119B34699005FDEF3;
+			remoteInfo = Spotibar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB1BBE2219B34699005FDEF3 /* Lounge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lounge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1BBE2519B34699005FDEF3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CB1BBE2819B34699005FDEF3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CB1BBE2919B34699005FDEF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CB1BBE2A19B34699005FDEF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB1BBE2D19B34699005FDEF3 /* Lounge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lounge-Info.plist"; sourceTree = "<group>"; };
+		CB1BBE2F19B34699005FDEF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB1BBE3119B34699005FDEF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB1BBE3319B34699005FDEF3 /* Lounge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lounge-Prefix.pch"; sourceTree = "<group>"; };
+		CB1BBE3519B34699005FDEF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CB1BBE3719B34699005FDEF3 /* SBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAppDelegate.h; sourceTree = "<group>"; };
+		CB1BBE3819B34699005FDEF3 /* SBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAppDelegate.m; sourceTree = "<group>"; };
+		CB1BBE3B19B34699005FDEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CB1BBE3D19B34699005FDEF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB1BBE4319B34699005FDEF3 /* LoungeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoungeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1BBE4419B34699005FDEF3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CB1BBE4B19B34699005FDEF3 /* LoungeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoungeTests-Info.plist"; sourceTree = "<group>"; };
+		CB1BBE4D19B34699005FDEF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB1BBE4F19B34699005FDEF3 /* LoungeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoungeTests.m; sourceTree = "<group>"; };
+		CB2C8E2019B8F2660065C446 /* SBStatusStripWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBStatusStripWidget.h; sourceTree = "<group>"; };
+		CB2C8E2119B8F2660065C446 /* SBStatusStripWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStatusStripWidget.m; sourceTree = "<group>"; };
+		CB42E80919B35F89003FCCB6 /* SBSpotifyConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSpotifyConnection.h; sourceTree = "<group>"; };
+		CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSpotifyConnection.m; sourceTree = "<group>"; };
+		CB42E81019B36EB0003FCCB6 /* SBMediaConnectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBMediaConnectionProtocol.h; sourceTree = "<group>"; };
+		CBAEFB4F19B762F20049138D /* SBPlayerNotificationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBPlayerNotificationProtocol.h; sourceTree = "<group>"; };
+		CBAEFB5319B784AC0049138D /* SBTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTimeFormatter.h; sourceTree = "<group>"; };
+		CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTimeFormatter.m; sourceTree = "<group>"; };
+		CBAEFB5619B7AEE70049138D /* SBSongTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSongTimer.h; sourceTree = "<group>"; };
+		CBAEFB5719B7AEE70049138D /* SBSongTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSongTimer.m; sourceTree = "<group>"; };
+		CBB3678719B379E000264E52 /* SBMediaHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBMediaHub.h; sourceTree = "<group>"; };
+		CBB3678819B379E000264E52 /* SBMediaHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBMediaHub.m; sourceTree = "<group>"; };
+		CBB367A219B4D96000264E52 /* Spotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spotify.h; sourceTree = "<group>"; };
+		CBB367A619B4E91100264E52 /* SBPlayerDummy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPlayerDummy.xib; sourceTree = "<group>"; };
+		CBB367A819B4E92500264E52 /* SBPlayerDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPlayerDummy.h; sourceTree = "<group>"; };
+		CBB367A919B4E92500264E52 /* SBPlayerDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPlayerDummy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB1BBE1F19B34699005FDEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BBE2619B34699005FDEF3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1BBE4019B34699005FDEF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BBE4619B34699005FDEF3 /* Cocoa.framework in Frameworks */,
+				CB1BBE4519B34699005FDEF3 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB1BBE1919B34699005FDEF3 = {
+			isa = PBXGroup;
+			children = (
+				CB1BBE2B19B34699005FDEF3 /* Lounge */,
+				CB1BBE4919B34699005FDEF3 /* LoungeTests */,
+				CB1BBE2419B34699005FDEF3 /* Frameworks */,
+				CB1BBE2319B34699005FDEF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB1BBE2319B34699005FDEF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BBE2219B34699005FDEF3 /* Lounge.app */,
+				CB1BBE4319B34699005FDEF3 /* LoungeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB1BBE2419B34699005FDEF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BBE2519B34699005FDEF3 /* Cocoa.framework */,
+				CB1BBE4419B34699005FDEF3 /* XCTest.framework */,
+				CB1BBE2719B34699005FDEF3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB1BBE2719B34699005FDEF3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BBE2819B34699005FDEF3 /* AppKit.framework */,
+				CB1BBE2919B34699005FDEF3 /* CoreData.framework */,
+				CB1BBE2A19B34699005FDEF3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CB1BBE2B19B34699005FDEF3 /* Lounge */ = {
+			isa = PBXGroup;
+			children = (
+				CB42E80819B35C70003FCCB6 /* Helpers */,
+				CB42E80F19B360D3003FCCB6 /* Media player interaction */,
+				CBB367AB19B509C500264E52 /* Widgets */,
+				CB1BBE3719B34699005FDEF3 /* SBAppDelegate.h */,
+				CB1BBE3819B34699005FDEF3 /* SBAppDelegate.m */,
+				CB1BBE3A19B34699005FDEF3 /* MainMenu.xib */,
+				CB1BBE3D19B34699005FDEF3 /* Images.xcassets */,
+				CB1BBE2C19B34699005FDEF3 /* Supporting Files */,
+			);
+			path = Lounge;
+			sourceTree = "<group>";
+		};
+		CB1BBE2C19B34699005FDEF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BBE2D19B34699005FDEF3 /* Lounge-Info.plist */,
+				CB1BBE2E19B34699005FDEF3 /* InfoPlist.strings */,
+				CB1BBE3119B34699005FDEF3 /* main.m */,
+				CB1BBE3319B34699005FDEF3 /* Lounge-Prefix.pch */,
+				CB1BBE3419B34699005FDEF3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB1BBE4919B34699005FDEF3 /* LoungeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BBE4F19B34699005FDEF3 /* LoungeTests.m */,
+				CB1BBE4A19B34699005FDEF3 /* Supporting Files */,
+			);
+			path = LoungeTests;
+			sourceTree = "<group>";
+		};
+		CB1BBE4A19B34699005FDEF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB1BBE4B19B34699005FDEF3 /* LoungeTests-Info.plist */,
+				CB1BBE4C19B34699005FDEF3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB2C8E2319B906D20065C446 /* Status strip */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C8E2019B8F2660065C446 /* SBStatusStripWidget.h */,
+				CB2C8E2119B8F2660065C446 /* SBStatusStripWidget.m */,
+			);
+			path = "Status strip";
+			sourceTree = "<group>";
+		};
+		CB42E80819B35C70003FCCB6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEFB5319B784AC0049138D /* SBTimeFormatter.h */,
+				CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */,
+				CBAEFB5619B7AEE70049138D /* SBSongTimer.h */,
+				CBAEFB5719B7AEE70049138D /* SBSongTimer.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB42E80F19B360D3003FCCB6 /* Media player interaction */ = {
+			isa = PBXGroup;
+			children = (
+				CB42E81019B36EB0003FCCB6 /* SBMediaConnectionProtocol.h */,
+				CBB3678719B379E000264E52 /* SBMediaHub.h */,
+				CBB3678819B379E000264E52 /* SBMediaHub.m */,
+				CBB3678A19B379F800264E52 /* Media players */,
+			);
+			name = "Media player interaction";
+			path = "Media players";
+			sourceTree = "<group>";
+		};
+		CBB3678A19B379F800264E52 /* Media players */ = {
+			isa = PBXGroup;
+			children = (
+				CBAEFB4F19B762F20049138D /* SBPlayerNotificationProtocol.h */,
+				CBB367A319B4DDE700264E52 /* Spotify */,
+			);
+			name = "Media players";
+			sourceTree = "<group>";
+		};
+		CBB367A319B4DDE700264E52 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				CB42E80919B35F89003FCCB6 /* SBSpotifyConnection.h */,
+				CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */,
+				CBB367A219B4D96000264E52 /* Spotify.h */,
+			);
+			path = Spotify;
+			sourceTree = "<group>";
+		};
+		CBB367AB19B509C500264E52 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C8E2319B906D20065C446 /* Status strip */,
+				CBB367AD19B509D600264E52 /* Dummy player */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		CBB367AD19B509D600264E52 /* Dummy player */ = {
+			isa = PBXGroup;
+			children = (
+				CBB367A619B4E91100264E52 /* SBPlayerDummy.xib */,
+				CBB367A819B4E92500264E52 /* SBPlayerDummy.h */,
+				CBB367A919B4E92500264E52 /* SBPlayerDummy.m */,
+			);
+			path = "Dummy player";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB1BBE2119B34699005FDEF3 /* Lounge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB1BBE5319B34699005FDEF3 /* Build configuration list for PBXNativeTarget "Lounge" */;
+			buildPhases = (
+				CB1BBE1E19B34699005FDEF3 /* Sources */,
+				CB1BBE1F19B34699005FDEF3 /* Frameworks */,
+				CB1BBE2019B34699005FDEF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lounge;
+			productName = Spotibar;
+			productReference = CB1BBE2219B34699005FDEF3 /* Lounge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB1BBE4219B34699005FDEF3 /* LoungeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB1BBE5619B34699005FDEF3 /* Build configuration list for PBXNativeTarget "LoungeTests" */;
+			buildPhases = (
+				CB1BBE3F19B34699005FDEF3 /* Sources */,
+				CB1BBE4019B34699005FDEF3 /* Frameworks */,
+				CB1BBE4119B34699005FDEF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB1BBE4819B34699005FDEF3 /* PBXTargetDependency */,
+			);
+			name = LoungeTests;
+			productName = SpotibarTests;
+			productReference = CB1BBE4319B34699005FDEF3 /* LoungeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB1BBE1A19B34699005FDEF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Karl Persson";
+				TargetAttributes = {
+					CB1BBE4219B34699005FDEF3 = {
+						TestTargetID = CB1BBE2119B34699005FDEF3;
+					};
+				};
+			};
+			buildConfigurationList = CB1BBE1D19B34699005FDEF3 /* Build configuration list for PBXProject "Lounge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB1BBE1919B34699005FDEF3;
+			productRefGroup = CB1BBE2319B34699005FDEF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB1BBE2119B34699005FDEF3 /* Lounge */,
+				CB1BBE4219B34699005FDEF3 /* LoungeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB1BBE2019B34699005FDEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BBE3019B34699005FDEF3 /* InfoPlist.strings in Resources */,
+				CB1BBE3E19B34699005FDEF3 /* Images.xcassets in Resources */,
+				CB1BBE3619B34699005FDEF3 /* Credits.rtf in Resources */,
+				CB1BBE3C19B34699005FDEF3 /* MainMenu.xib in Resources */,
+				CBB367A719B4E91100264E52 /* SBPlayerDummy.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1BBE4119B34699005FDEF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BBE4E19B34699005FDEF3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB1BBE1E19B34699005FDEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BBE3219B34699005FDEF3 /* main.m in Sources */,
+				CBB367AA19B4E92500264E52 /* SBPlayerDummy.m in Sources */,
+				CB1BBE3919B34699005FDEF3 /* SBAppDelegate.m in Sources */,
+				CB42E80B19B35F89003FCCB6 /* SBSpotifyConnection.m in Sources */,
+				CBAEFB5519B784AC0049138D /* SBTimeFormatter.m in Sources */,
+				CBAEFB5819B7AEE70049138D /* SBSongTimer.m in Sources */,
+				CBB3678919B379E000264E52 /* SBMediaHub.m in Sources */,
+				CB2C8E2219B8F2660065C446 /* SBStatusStripWidget.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB1BBE3F19B34699005FDEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB1BBE5019B34699005FDEF3 /* LoungeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB1BBE4819B34699005FDEF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB1BBE2119B34699005FDEF3 /* Lounge */;
+			targetProxy = CB1BBE4719B34699005FDEF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB1BBE2E19B34699005FDEF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1BBE2F19B34699005FDEF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB1BBE3419B34699005FDEF3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1BBE3519B34699005FDEF3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CB1BBE3A19B34699005FDEF3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1BBE3B19B34699005FDEF3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CB1BBE4C19B34699005FDEF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1BBE4D19B34699005FDEF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB1BBE5119B34699005FDEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CB1BBE5219B34699005FDEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CB1BBE5419B34699005FDEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lounge/Lounge-Prefix.pch";
+				INFOPLIST_FILE = "Lounge/Lounge-Info.plist";
+				PRODUCT_NAME = Lounge;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CB1BBE5519B34699005FDEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lounge/Lounge-Prefix.pch";
+				INFOPLIST_FILE = "Lounge/Lounge-Info.plist";
+				PRODUCT_NAME = Lounge;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CB1BBE5719B34699005FDEF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spotibar.app/Contents/MacOS/Spotibar";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spotibar/Spotibar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpotibarTests/LoungeTests-Info.plist";
+				PRODUCT_NAME = LoungeTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CB1BBE5819B34699005FDEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spotibar.app/Contents/MacOS/Spotibar";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spotibar/Spotibar-Prefix.pch";
+				INFOPLIST_FILE = "SpotibarTests/LoungeTests-Info.plist";
+				PRODUCT_NAME = LoungeTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB1BBE1D19B34699005FDEF3 /* Build configuration list for PBXProject "Lounge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1BBE5119B34699005FDEF3 /* Debug */,
+				CB1BBE5219B34699005FDEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB1BBE5319B34699005FDEF3 /* Build configuration list for PBXNativeTarget "Lounge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1BBE5419B34699005FDEF3 /* Debug */,
+				CB1BBE5519B34699005FDEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB1BBE5619B34699005FDEF3 /* Build configuration list for PBXNativeTarget "LoungeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB1BBE5719B34699005FDEF3 /* Debug */,
+				CB1BBE5819B34699005FDEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB1BBE1A19B34699005FDEF3 /* Project object */;
+}
