@@ -33,7 +33,7 @@
 			containerPortal = CB1BBE1A19B34699005FDEF3 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CB1BBE2119B34699005FDEF3;
-			remoteInfo = Spotibar;
+			remoteInfo = Lounge;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -266,7 +266,7 @@
 			dependencies = (
 			);
 			name = Lounge;
-			productName = Spotibar;
+			productName = Lounge;
 			productReference = CB1BBE2219B34699005FDEF3 /* Lounge.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -284,7 +284,7 @@
 				CB1BBE4819B34699005FDEF3 /* PBXTargetDependency */,
 			);
 			name = LoungeTests;
-			productName = SpotibarTests;
+			productName = LoungeTests;
 			productReference = CB1BBE4319B34699005FDEF3 /* LoungeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -493,6 +493,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lounge/Lounge-Prefix.pch";
 				INFOPLIST_FILE = "Lounge/Lounge-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Lounge;
 				WRAPPER_EXTENSION = app;
 			};
@@ -506,6 +507,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lounge/Lounge-Prefix.pch";
 				INFOPLIST_FILE = "Lounge/Lounge-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Lounge;
 				WRAPPER_EXTENSION = app;
 			};
@@ -514,19 +516,19 @@
 		CB1BBE5719B34699005FDEF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spotibar.app/Contents/MacOS/Spotibar";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lounge.app/Contents/MacOS/Lounge";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Spotibar/Spotibar-Prefix.pch";
+				GCC_PREFIX_HEADER = "Lounge/Lounge-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SpotibarTests/LoungeTests-Info.plist";
+				INFOPLIST_FILE = "LoungeTests/LoungeTests-Info.plist";
 				PRODUCT_NAME = LoungeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -536,15 +538,15 @@
 		CB1BBE5819B34699005FDEF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spotibar.app/Contents/MacOS/Spotibar";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lounge.app/Contents/MacOS/Lounge";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Spotibar/Spotibar-Prefix.pch";
-				INFOPLIST_FILE = "SpotibarTests/LoungeTests-Info.plist";
+				GCC_PREFIX_HEADER = "Lounge/Lounge-Prefix.pch";
+				INFOPLIST_FILE = "LoungeTests/LoungeTests-Info.plist";
 				PRODUCT_NAME = LoungeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
