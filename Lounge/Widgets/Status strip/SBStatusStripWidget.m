@@ -28,12 +28,12 @@
 #pragma mark - Initialization
 - (instancetype)init
 {
-    if (self = [super init]) {
+	if (self = [super init]) {
 		// Initialize status item
 		self.statusItem = nil;
 		self.hidden = YES;
-    }
-    return self;
+	}
+	return self;
 }
 
 #pragma mark - Widget handling
@@ -48,20 +48,20 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
 	// Only try to fetch update if the sending object conforms to the given protocol
-    if ([[object class] conformsToProtocol:@protocol(SBMediaConnectionProtocol)]) {
-        // Update gui for property
-        id<SBMediaConnectionProtocol> connection = object;
+	if ([[object class] conformsToProtocol:@protocol(SBMediaConnectionProtocol)]) {
+		// Update gui for property
+		id<SBMediaConnectionProtocol> connection = object;
 		
 		if ([keyPath isEqualTo:@"running" ]) {
 			// Hide when the player isn't running
 			self.hidden = !connection.running;
 		}
 		else if ([keyPath isEqualTo:@"artist"]) {
-            self.artist = connection.artist;
-        }
+			self.artist = connection.artist;
+		}
 		else if ([keyPath isEqualTo:@"title"]) {
-            self.title = connection.title;
-        }
+			self.title = connection.title;
+		}
 	}
 }
 

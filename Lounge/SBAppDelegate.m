@@ -26,15 +26,15 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
-    // Initialize media player hub
-    self.mediaHub = [[SBMediaHub alloc] init];
+	// Initialize media player hub
+	self.mediaHub = [[SBMediaHub alloc] init];
 	// Subscribe to media players
 	[self.mediaHub addMediaPlayer:[[SBSpotifyConnection alloc] initWithDelegate:self.mediaHub]];
-    
-    // Create player dummy window
-    self.playerDummy = [[SBPlayerDummy alloc] initWithWindowNibName:@"SBPlayerDummy"];
-    [self.playerDummy showWindow:self];
-    [self.mediaHub subscribeWidget:self.playerDummy];
+	
+	// Create player dummy window
+	self.playerDummy = [[SBPlayerDummy alloc] initWithWindowNibName:@"SBPlayerDummy"];
+	[self.playerDummy showWindow:self];
+	[self.mediaHub subscribeWidget:self.playerDummy];
 	
 	// Create status strip
 	self.statusStrip = [[SBStatusStripWidget alloc] init];
