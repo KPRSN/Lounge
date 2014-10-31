@@ -9,7 +9,6 @@
 //
 
 #import "SBMediaHub.h"
-#import "SBSpotifyConnection.h"
 #import "SBSongTimer.h"
 
 @interface SBMediaHub ()
@@ -17,7 +16,7 @@
 @property (nonatomic, readonly) NSArray *subscriptionProperties;
 
 @property (nonatomic, strong) id<SBMediaConnectionProtocol> activePlayer;
-@property (nonatomic, strong) NSArray *mediaPlayers;
+@property (nonatomic, strong) NSMutableSet *mediaPlayers;
 @property (nonatomic, strong) SBSongTimer *songTimer;
 
 // Media connection properties
@@ -40,56 +39,73 @@
 #pragma mark - Initialization
 - (instancetype)init
 {
-    if (self = [super init]) {
-        self.mediaPlayers = [[NSMutableArray alloc] init];
-        
-        // Initialize song timer
-        self.songTimer = [[SBSongTimer alloc] initWithTarget:self selector:@selector(update)];
-        
-        // Connect to spotify
-        self.activePlayer = [[SBSpotifyConnection alloc] initWithDelegate:self];
-        self.mediaPlayers = @[self.activePlayer];
-        
-        [self clear];
-        [self updateAll];
-    }
-    return self;
+	if (self = [super init]) {
+		// Initialize song timer
+		self.songTimer = [[SBSongTimer alloc] initWithTarget:self selector:@selector(update)];
+
+		[self clear];
+		[self updateAll];
+	}
+	return self;
 }
 
 #pragma mark - Delegate widget handling
 // Subscribe widget to media properties
 - (void)subscribeWidget:(id)widget
 {
-    // Subscribe widget to all properties
-    for (NSString *prop in self.subscriptionProperties) {
-        [self addObserver:widget
-               forKeyPath:prop
-                  options:NSKeyValueObservingOptionInitial
-                  context:NULL];
-    }
+	// Subscribe widget to all properties
+	for (NSString *prop in self.subscriptionProperties) {
+		[self addObserver:widget
+			   forKeyPath:prop
+				  options:NSKeyValueObservingOptionInitial
+				  context:NULL];
+	}
 }
 
 // Unsubscribe widget from media properties
 - (void)unsubscribeWidget:(id)widget
 {
-    for (NSString *prop in self.subscriptionProperties) {
-        @try {
-            [self removeObserver:widget forKeyPath:prop];
-        }
-        @catch (NSException *__unused exception) {}
-    }
+	for (NSString *prop in self.subscriptionProperties) {
+		@try {
+			[self removeObserver:widget forKeyPath:prop];
+		}
+		@catch (NSException *__unused exception) {}
+	}
 }
 
 #pragma mark - Player handling
+// Add media player to the system
+- (void)addMediaPlayer:(id<SBMediaConnectionProtocol>)mediaPlayer
+{
+	[self.mediaPlayers addObject:mediaPlayer];
+	
+	// Set active
+	if (!self.activePlayer) {
+		self.activePlayer = mediaPlayer;
+		[self updateAll];
+	}
+}
+
+// Remove media player from the system
+- (void)removeMediaPlayer:(id<SBMediaConnectionProtocol>)mediaPlayer
+{
+	[self.mediaPlayers removeObject:mediaPlayer];
+	
+	// Set inactive
+	if (self.activePlayer == mediaPlayer) {
+		self.activePlayer = nil;
+	}
+}
+
 // Player updated (callback from media player)
 - (void)playerUpdated:(id<SBMediaConnectionProtocol>)mediaPlayer
 {
-    if (![self.playerName isEqualToString:mediaPlayer.playerName]) {
-        // New active player
-        self.activePlayer = mediaPlayer;
-        [self clear];
-    }
-    [self updateAll];
+	if (![self.playerName isEqualToString:mediaPlayer.playerName]) {
+		// New active player
+		self.activePlayer = mediaPlayer;
+		[self clear];
+	}
+	[self updateAll];
 }
 
 // Clear properties

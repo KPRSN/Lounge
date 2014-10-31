@@ -16,7 +16,10 @@
 
 // Media player getters
 @property (nonatomic, strong, readonly) id<SBMediaConnectionProtocol> activePlayer;
-@property (nonatomic, strong, readonly) NSArray *mediaPlayers;
+
+// Add and remove media players
+- (void)addMediaPlayer:(id<SBMediaConnectionProtocol>)mediaPlayer;
+- (void)removeMediaPlayer:(id<SBMediaConnectionProtocol>)mediaPlayer;
 
 // Widget subscription
 - (void)subscribeWidget:(id)widget;

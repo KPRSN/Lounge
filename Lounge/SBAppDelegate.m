@@ -12,6 +12,8 @@
 #import "SBPlayerDummy.h"
 #import "SBStatusStripWidget.h"
 
+#import "SBSpotifyConnection.h"
+
 @interface SBAppDelegate ()
 
 @property (nonatomic, strong) SBMediaHub *mediaHub;
@@ -26,6 +28,8 @@
 {
     // Initialize media player hub
     self.mediaHub = [[SBMediaHub alloc] init];
+	// Subscribe to media players
+	[self.mediaHub addMediaPlayer:[[SBSpotifyConnection alloc] initWithDelegate:self.mediaHub]];
     
     // Create player dummy window
     self.playerDummy = [[SBPlayerDummy alloc] initWithWindowNibName:@"SBPlayerDummy"];
