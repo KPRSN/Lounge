@@ -156,9 +156,9 @@
 	p2.running = YES;
 	[p2 notifyDelegate];
 	
-	// Test active player
+	// Test active player (media hub and widget)
 	XCTAssertEqual(p2, self.mediaHub.activePlayer);
-	XCTAssertEqualObjects(@"P2", self.mediaHub.playerName);
+	XCTAssertEqualObjects(@"P2", self.widget.playerName);
 }
 
 // Test terminating active player
@@ -183,9 +183,9 @@
 	p2.running = NO;
 	[p2 notifyDelegate];
 	
-	// Test active player
+	// Test active player (media hub and widget)
 	XCTAssertEqual(p1, self.mediaHub.activePlayer);
-	XCTAssertEqualObjects(@"P1", self.mediaHub.playerName);
+	XCTAssertEqualObjects(@"P1", self.widget.playerName);
 }
 
 // Test terminating inactive player
@@ -211,9 +211,9 @@
 	p1.running = NO;
 	[p1 notifyDelegate];
 	
-	// Test active player
+	// Test active player (media hub and widget)
 	XCTAssertEqual(p2, self.mediaHub.activePlayer);
-	XCTAssertEqualObjects(@"P2", self.mediaHub.playerName);
+	XCTAssertEqualObjects(@"P2", self.widget.playerName);
 }
 
 @end
