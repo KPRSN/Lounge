@@ -20,6 +20,9 @@
 		CB1BBE5019B34699005FDEF3 /* LoungeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB1BBE4F19B34699005FDEF3 /* LoungeTests.m */; };
 		CB2C8E2219B8F2660065C446 /* SBStatusStripWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2C8E2119B8F2660065C446 /* SBStatusStripWidget.m */; };
 		CB42E80B19B35F89003FCCB6 /* SBSpotifyConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */; };
+		CB7D70081A0555AD0019F119 /* MediaHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D70071A0555AD0019F119 /* MediaHubTests.m */; };
+		CB7D700B1A055A1E0019F119 /* SBMockPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D700A1A055A1E0019F119 /* SBMockPlayer.m */; };
+		CB7D700E1A055A5B0019F119 /* SBMockWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7D700D1A055A5B0019F119 /* SBMockWidget.m */; };
 		CBAEFB5519B784AC0049138D /* SBTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */; };
 		CBAEFB5819B7AEE70049138D /* SBSongTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAEFB5719B7AEE70049138D /* SBSongTimer.m */; };
 		CBB3678919B379E000264E52 /* SBMediaHub.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3678819B379E000264E52 /* SBMediaHub.m */; };
@@ -62,6 +65,11 @@
 		CB42E80919B35F89003FCCB6 /* SBSpotifyConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBSpotifyConnection.h; sourceTree = "<group>"; };
 		CB42E80A19B35F89003FCCB6 /* SBSpotifyConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBSpotifyConnection.m; sourceTree = "<group>"; };
 		CB42E81019B36EB0003FCCB6 /* SBMediaConnectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBMediaConnectionProtocol.h; sourceTree = "<group>"; };
+		CB7D70071A0555AD0019F119 /* MediaHubTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaHubTests.m; sourceTree = "<group>"; };
+		CB7D70091A055A1E0019F119 /* SBMockPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMockPlayer.h; path = Mocks/SBMockPlayer.h; sourceTree = "<group>"; };
+		CB7D700A1A055A1E0019F119 /* SBMockPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBMockPlayer.m; path = Mocks/SBMockPlayer.m; sourceTree = "<group>"; };
+		CB7D700C1A055A5B0019F119 /* SBMockWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBMockWidget.h; path = Mocks/SBMockWidget.h; sourceTree = "<group>"; };
+		CB7D700D1A055A5B0019F119 /* SBMockWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBMockWidget.m; path = Mocks/SBMockWidget.m; sourceTree = "<group>"; };
 		CBAEFB4F19B762F20049138D /* SBPlayerNotificationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBPlayerNotificationProtocol.h; sourceTree = "<group>"; };
 		CBAEFB5319B784AC0049138D /* SBTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTimeFormatter.h; sourceTree = "<group>"; };
 		CBAEFB5419B784AC0049138D /* SBTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBTimeFormatter.m; sourceTree = "<group>"; };
@@ -165,7 +173,9 @@
 		CB1BBE4919B34699005FDEF3 /* LoungeTests */ = {
 			isa = PBXGroup;
 			children = (
+				CB7D70071A0555AD0019F119 /* MediaHubTests.m */,
 				CB1BBE4F19B34699005FDEF3 /* LoungeTests.m */,
+				CB7D700F1A055A890019F119 /* Mocks */,
 				CB1BBE4A19B34699005FDEF3 /* Supporting Files */,
 			);
 			path = LoungeTests;
@@ -210,6 +220,17 @@
 			);
 			name = "Media player interaction";
 			path = "Media players";
+			sourceTree = "<group>";
+		};
+		CB7D700F1A055A890019F119 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CB7D700C1A055A5B0019F119 /* SBMockWidget.h */,
+				CB7D700D1A055A5B0019F119 /* SBMockWidget.m */,
+				CB7D70091A055A1E0019F119 /* SBMockPlayer.h */,
+				CB7D700A1A055A1E0019F119 /* SBMockPlayer.m */,
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 		CBB3678A19B379F800264E52 /* Media players */ = {
@@ -365,6 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7D700E1A055A5B0019F119 /* SBMockWidget.m in Sources */,
+				CB7D70081A0555AD0019F119 /* MediaHubTests.m in Sources */,
+				CB7D700B1A055A1E0019F119 /* SBMockPlayer.m in Sources */,
 				CB1BBE5019B34699005FDEF3 /* LoungeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
