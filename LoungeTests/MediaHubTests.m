@@ -84,7 +84,7 @@
 	[player notifyDelegate];
 	
 	// Test playback values
-	XCTAssertEqualObjects(self.widget.playerName, @"Player");
+	XCTAssertEqualObjects(self.widget.playerName, @"");
 	XCTAssertFalse(self.widget.running);
 	XCTAssertFalse(self.widget.playing);
 	XCTAssertFalse(self.widget.shuffle);
