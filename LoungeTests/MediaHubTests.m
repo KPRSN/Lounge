@@ -79,8 +79,9 @@
 	player.position = 100.0f;
 	[player notifyDelegate];
 	
-	// Clear player info
-	[player clear];
+	// Terminate player
+	player.running = NO;
+	[player notifyDelegate];
 	
 	// Test playback values
 	XCTAssertEqualObjects(self.widget.playerName, @"Player");
@@ -179,6 +180,7 @@
 	p2.playerName = @"P2";
 	p2.running = YES;
 	[p2 notifyDelegate];
+	
 	// Terminate player2
 	p2.running = NO;
 	[p2 notifyDelegate];
