@@ -40,6 +40,8 @@
 - (instancetype)init
 {
 	if (self = [super init]) {
+		self.mediaPlayers = [[NSMutableSet alloc] init];
+		
 		// Initialize song timer
 		self.songTimer = [[SBSongTimer alloc] initWithTarget:self selector:@selector(update)];
 		
@@ -100,12 +102,31 @@
 // Player updated (callback from media player)
 - (void)playerUpdated:(id<SBMediaConnectionProtocol>)mediaPlayer
 {
-	if (![self.playerName isEqualToString:mediaPlayer.playerName]) {
-		// New active player
-		self.activePlayer = mediaPlayer;
-		[self clear];
+	if (!mediaPlayer.running) {
+		// Terminated
+		if (mediaPlayer == self.activePlayer) {
+			// Active player terminated
+			self.activePlayer = nil;
+			[self clear];
+			
+			// Find next running player
+			for (id<SBMediaConnectionProtocol> p in self.mediaPlayers) {
+				if (p.running) {
+					self.activePlayer = p;
+					[self updateAll];
+				}
+			}
+		}
 	}
-	[self updateAll];
+	else {
+		// Updated
+		if (mediaPlayer != self.activePlayer) {
+			// New active player
+			self.activePlayer = mediaPlayer;
+			[self clear];
+		}
+		[self updateAll];
+	}
 }
 
 // Clear properties
