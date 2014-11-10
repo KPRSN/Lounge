@@ -535,7 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Lounge;
-				SWIFT_OBJC_BRIDGING_HEADER = "Lounge/Widgets/Dummy player/Lounge-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lounge//Lounge-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -553,7 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = Lounge;
-				SWIFT_OBJC_BRIDGING_HEADER = "Lounge/Widgets/Dummy player/Lounge-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lounge//Lounge-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
