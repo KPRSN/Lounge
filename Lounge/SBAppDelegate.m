@@ -11,6 +11,7 @@
 #import "SBMediaConnectionProtocol.h"
 #import "SBPlayerDummy.h"
 #import "SBStatusStripWidget.h"
+#import "Lounge-Swift.h"
 
 #import "SBSpotifyConnection.h"
 
@@ -19,6 +20,7 @@
 @property (nonatomic, strong) SBMediaHub *mediaHub;
 @property (nonatomic, strong) SBPlayerDummy *playerDummy;
 @property (nonatomic, strong) SBStatusStripWidget *statusStrip;
+@property (nonatomic, strong) SBStatusPlayerWidget *statusWidget;
 
 @end
 
@@ -39,6 +41,10 @@
 	// Create status strip
 	self.statusStrip = [[SBStatusStripWidget alloc] init];
 	[self.mediaHub subscribeWidget:self.statusStrip];
+	
+	// Create status widget
+	self.statusWidget = [[SBStatusPlayerWidget alloc] init];
+	[self.mediaHub subscribeWidget:self.statusWidget];
 }
 
 @end
