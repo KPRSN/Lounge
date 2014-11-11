@@ -82,8 +82,8 @@
 		CBB367A619B4E91100264E52 /* SBPlayerDummy.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPlayerDummy.xib; sourceTree = "<group>"; };
 		CBB367A819B4E92500264E52 /* SBPlayerDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPlayerDummy.h; sourceTree = "<group>"; };
 		CBB367A919B4E92500264E52 /* SBPlayerDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPlayerDummy.m; sourceTree = "<group>"; };
-		CBD420B91A1132E6009459EB /* Lounge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Lounge-Bridging-Header.h"; path = "Widgets/Dummy player/Lounge-Bridging-Header.h"; sourceTree = "<group>"; };
 		CBD420BA1A1132E6009459EB /* SBStatusPlayerWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBStatusPlayerWidget.swift; path = "Lounge/Widgets/Status player/SBStatusPlayerWidget.swift"; sourceTree = SOURCE_ROOT; };
+		CBD420BD1A126CEA009459EB /* Lounge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lounge-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,7 @@
 				CBB367AB19B509C500264E52 /* Widgets */,
 				CB1BBE3719B34699005FDEF3 /* SBAppDelegate.h */,
 				CB1BBE3819B34699005FDEF3 /* SBAppDelegate.m */,
-				CBD420B91A1132E6009459EB /* Lounge-Bridging-Header.h */,
+				CBD420BD1A126CEA009459EB /* Lounge-Bridging-Header.h */,
 				CB1BBE3A19B34699005FDEF3 /* MainMenu.xib */,
 				CB1BBE3D19B34699005FDEF3 /* Images.xcassets */,
 				CB1BBE2C19B34699005FDEF3 /* Supporting Files */,
