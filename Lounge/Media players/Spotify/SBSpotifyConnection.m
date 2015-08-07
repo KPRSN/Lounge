@@ -155,7 +155,7 @@
 
 - (CGFloat)position
 {
-	return self.spotify.playerPosition;
+	return self.spotify.playerPosition/1000;
 }
 
 @end
